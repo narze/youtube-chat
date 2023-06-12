@@ -98,7 +98,7 @@ function convertColorToHex6(colorNum: number) {
 }
 
 /** メッセージrun配列をMessageItem配列へ変換 */
-function parseMessages(runs: MessageRun[] | undefined): MessageItem[] {
+function parseMessages(runs?: MessageRun[]): MessageItem[] {
   if (!runs) {
     return []
   }
